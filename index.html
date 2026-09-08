@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lê Quốc Bảo | Full-stack Developer</title>
+  <meta name="description" content="Portfolio of Lê Quốc Bảo - Full-stack Developer (Java · .NET · React). Open to work. Based in Ho Chi Minh City, Vietnam." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">BAO<span class="dot">.</span>DEV</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="Le-Quoc-Bao-CV.pdf" download class="nav-cta">📄 Download CV</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="starfield"></canvas>
+    <div class="hero-social">
+      <a href="https://github.com/Bao2311" target="_blank" title="GitHub" id="hero-github">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="mailto:lequocbaotxdh@gmail.com" title="Email" id="hero-email">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="tel:0915243557" title="Phone" id="hero-phone">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-greeting">✦ FULL-STACK DEVELOPER · JAVA · .NET · REACT ✦</p>
+      <h1 class="hero-title">HELLO WORLD<span class="blink">_</span></h1>
+      <p class="hero-sub">A MESSAGE FROM HO CHI MINH CITY</p>
+      <div class="hero-name-wrap">
+        <p class="hero-iam">I AM</p>
+        <h2 class="hero-name" id="typed-name"></h2>
+      </div>
+      <p class="hero-role"><span id="typed-role"></span></p>
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn-primary">
+          <span class="btn-corner tl"></span><span class="btn-corner tr"></span>
+          View Projects
+          <span class="btn-corner bl"></span><span class="btn-corner br"></span>
+        </a>
+        <a href="Le-Quoc-Bao-CV.pdf" download class="btn-outline">📄 Download CV</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="planet-wrap">
+      <div class="planet">
+        <div class="planet-glow"></div>
+        <div class="astronaut">
+          <div class="astro-body">
+            <div class="astro-helmet"><div class="astro-visor"></div></div>
+            <div class="astro-suit">
+              <div class="astro-arm left"></div>
+              <div class="astro-torso"></div>
+              <div class="astro-arm right"></div>
+            </div>
+            <div class="astro-legs">
+              <div class="astro-leg left"></div>
+              <div class="astro-leg right"></div>
+            </div>
+            <div class="laptop">
+              <div class="laptop-screen">
+                <div class="code-line"></div>
+                <div class="code-line short"></div>
+                <div class="code-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12l4 4 4-4"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">// ABOUT ME</div>
+    <div class="about-container">
+      <div class="about-avatar-wrap">
+        <div class="about-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-inner"><span>LQB</span></div>
+          <div class="avatar-badge">FPT</div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num" data-target="2">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="30">0</span>
+            <span class="stat-label">APIs Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="4">0</span>
+            <span class="stat-label">Years Study</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>Who Am I?</h2>
+        <p>Xin chào! Tôi là <strong>Lê Quốc Bảo</strong> — <strong>Full-stack Developer (Java · .NET · React)</strong> với kinh nghiệm thực chiến tại <strong>FPT Software</strong>.</p>
+        <p>Chuyên sâu về xây dựng hệ thống Backend với <strong>.NET (C#) / Java (Spring Boot)</strong> và phát triển giao diện hiện đại với <strong>React.js / Next.js</strong>. Mục tiêu tối ưu hóa hiệu năng hệ thống và phát triển các giải pháp phần mềm mở rộng linh hoạt.</p>
+        <p>Hiện đang theo học <strong>Kỹ thuật phần mềm</strong> tại <strong>FPT University</strong> (Hướng Kỹ sư cầu nối Hàn Quốc, 2022–2026). Chứng chỉ <strong>TOPIK 3 tiếng Hàn</strong>.</p>
+        <div class="about-info-grid">
+          <div class="info-item"><span class="info-label">📍 Location</span><span class="info-val">Quận 9, TP. Hồ Chí Minh</span></div>
+          <div class="info-item"><span class="info-label">📞 Phone</span><span class="info-val">0915 243 557</span></div>
+          <div class="info-item"><span class="info-label">📧 Email</span><span class="info-val">lequocbaotxdh@gmail.com</span></div>
+          <div class="info-item"><span class="info-label">🎓 University</span><span class="info-val">FPT University (2022–2026)</span></div>
+        </div>
+        <div class="about-tags">
+          <span class="tag">💼 Open to Work</span>
+          <span class="tag">🇰🇷 TOPIK 3</span>
+          <span class="tag">⚡ Fresher Dev @ FPT Software</span>
+          <span class="tag">🤖 AI-assisted Dev</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">// WORK EXPERIENCE</div>
+    <h2 class="section-title">My Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>Fresher Full-stack Developer</h3>
+              <p class="timeline-company">🏢 FPT Software</p>
+            </div>
+            <span class="timeline-date">01/2026 — 08/2026</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Phát triển backend hệ thống học tiếng Việt theo giọng điệu địa phương bằng <strong>Java &amp; Spring Boot</strong></li>
+            <li>Xây dựng <strong>RESTful API</strong>, xử lý nghiệp vụ, thiết kế &amp; thao tác dữ liệu với <strong>PostgreSQL</strong> qua Spring Data JPA</li>
+            <li>Áp dụng <strong>JWT &amp; Spring Security</strong> cho xác thực, phân quyền người dùng (Admin/Educator/Learner)</li>
+            <li>Phối hợp nhóm xử lý lỗi, hoàn thiện chức năng và kiểm thử API bằng <strong>Swagger/OpenAPI</strong></li>
+            <li>Hỗ trợ xây dựng giao diện web bằng <strong>React &amp; TypeScript</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item edu">
+        <div class="timeline-dot edu"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>Sinh viên Kỹ thuật Phần mềm</h3>
+              <p class="timeline-company">🎓 FPT University — Hướng Kỹ sư cầu nối Hàn Quốc</p>
+            </div>
+            <span class="timeline-date">2022 — 2026</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Nắm vững nền tảng <strong>OOP, Cấu trúc dữ liệu &amp; Thuật toán, SDLC</strong></li>
+            <li>Chứng chỉ tiếng Hàn <strong>TOPIK 3</strong> (05/2026)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label">// SKILLS & TECHNOLOGIES</div>
+    <h2 class="section-title">My Arsenal</h2>
+    <div class="skills-grid">
+      <div class="skill-card" data-delay="0">
+        <div class="skill-icon">☕</div>
+        <h3>Backend — Java</h3>
+        <p>Java 17, Spring Boot 4.x, Spring Security, Spring Data JPA, RESTful API, OOP, WebSocket (STOMP)</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill-card" data-delay="100">
+        <div class="skill-icon">🔷</div>
+        <h3>Backend — .NET</h3>
+        <p>C#, ASP.NET Core, Entity Framework Core, Repository Pattern, Unit of Work, RESTful API</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+      </div>
+      <div class="skill-card" data-delay="200">
+        <div class="skill-icon">⚛️</div>
+        <h3>Frontend — React</h3>
+        <p>React 18, TypeScript, React Router DOM, Axios, Tailwind CSS, Ant Design, Framer Motion, Recharts</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-card" data-delay="300">
+        <div class="skill-icon">📱</div>
+        <h3>Mobile</h3>
+        <p>React Native, Expo, Cross-platform app development</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+      </div>
+      <div class="skill-card" data-delay="400">
+        <div class="skill-icon">🗄️</div>
+        <h3>Database</h3>
+        <p>PostgreSQL, SQL Server, MySQL, Liquibase, EF Core Migrations, Spring Data JPA</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-card" data-delay="500">
+        <div class="skill-icon">🔐</div>
+        <h3>Auth &amp; Security</h3>
+        <p>JWT Authentication, Spring Security, Google OAuth2, Role-based Access Control, PayOS</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-card" data-delay="600">
+        <div class="skill-icon">☁️</div>
+        <h3>Cloud &amp; Integration</h3>
+        <p>Firebase Admin SDK, Cloudinary, Google OAuth2, Apache POI (Excel), iTextPDF, Spring Mail</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+      </div>
+      <div class="skill-card" data-delay="700">
+        <div class="skill-icon">🛠️</div>
+        <h3>DevOps &amp; Tools</h3>
+        <p>Docker, Git, GitHub, Swagger/OpenAPI, Postman, IntelliJ IDEA, Visual Studio, VS Code</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-card" data-delay="800">
+        <div class="skill-icon">🤖</div>
+        <h3>AI Dev Tools</h3>
+        <p>Antigravity, Claude AI, GitHub Copilot — sinh code, refactor, viết Unit Test</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+    </div>
+    <!-- Cert banner -->
+    <div class="cert-banner">
+      <span class="cert-icon">🇰🇷</span>
+      <div>
+        <strong>Chứng chỉ Tiếng Hàn TOPIK 3</strong>
+        <span>Issued 05/2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">// FEATURED PROJECTS</div>
+    <h2 class="section-title">My Galaxy of Work</h2>
+    <div class="projects-grid">
+
+      <!-- SpeakVN -->
+      <div class="project-card featured">
+        <div class="project-glow purple"></div>
+        <div class="project-badge">Capstone @ FPT Software · 01/2026 – 08/2026</div>
+        <div class="project-header">
+          <div class="project-icon">🗣️</div>
+          <div class="project-links">
+            <a href="https://github.com/Bao2311/SpeakVN" target="_blank" class="project-link" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">SpeakVN Journey</h3>
+        <p class="project-type">Nền tảng chữa ngọng Tiếng Việt theo từng địa phương</p>
+        <p class="project-desc">Hệ thống học tiếng Việt theo giọng Bắc/Trung/Nam với AI đánh giá phát âm. Phụ trách phát triển backend Spring Boot 4: thiết kế và triển khai <strong>30+ REST API</strong> (Auth, User, Educator, Admin, Tournament, Leaderboard, DailyChallenge, Notification, AI Feedback, Chat realtime). JWT + Spring Security đa vai trò, PostgreSQL 35+ bảng, Liquibase migration, Google OAuth2, Firebase, Docker deploy.</p>
+        <div class="project-tech">
+          <span>Java 17</span><span>Spring Boot 4.x</span><span>PostgreSQL</span>
+          <span>Spring Security</span><span>JWT</span><span>WebSocket/STOMP</span>
+          <span>React 18</span><span>TypeScript</span><span>Ant Design</span>
+          <span>Firebase</span><span>Docker</span><span>Swagger</span>
+        </div>
+        <div class="project-highlights">
+          <div class="highlight">✓ 30+ REST API endpoints đầy đủ chức năng</div>
+          <div class="highlight">✓ Real-time Chat &amp; Tournament qua WebSocket/STOMP</div>
+          <div class="highlight">✓ PostgreSQL 35+ bảng, quản lý migration bằng Liquibase</div>
+          <div class="highlight">✓ Google OAuth2 · Firebase · Docker deploy</div>
+          <div class="highlight">✓ Export Excel (Apache POI) · PDF (iTextPDF)</div>
+        </div>
+      </div>
+
+      <!-- Cinema -->
+      <div class="project-card">
+        <div class="project-glow blue"></div>
+        <div class="project-badge">Team Project · 01/2025 – 05/2025</div>
+        <div class="project-header">
+          <div class="project-icon">🎬</div>
+          <div class="project-links">
+            <a href="https://github.com/Bao2311/CINEMA-BOOKING-PROJECT" target="_blank" class="project-link" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">Cinema Ticket Booking System</h3>
+        <p class="project-type">Hệ thống đặt vé rạp chiếu phim trực tuyến</p>
+        <p class="project-desc">Hệ thống full-stack đặt vé xem phim với 3 vai trò: Admin, Staff, Customer. Backend ASP.NET Core: <strong>22 controller</strong>, quản lý phòng chiếu &amp; ghế ngồi, đặt vé với sơ đồ ghế tương tác, thanh toán <strong>PayOS (sandbox)</strong>, tạo mã QR check-in. JWT Bearer, Repository Pattern + Unit of Work, EF Core Migrations. Tích hợp Cloudinary &amp; MailKit/SMTP.</p>
+        <div class="project-tech">
+          <span>ASP.NET Core (.NET 9)</span><span>Entity Framework Core</span>
+          <span>SQL Server</span><span>JWT</span><span>PayOS</span>
+          <span>React 18</span><span>TypeScript</span><span>Tailwind CSS</span>
+          <span>Cloudinary</span><span>Ant Design</span>
+        </div>
+        <div class="project-highlights">
+          <div class="highlight">✓ 22 controllers, CRUD phim &amp; quản lý ghế ngồi</div>
+          <div class="highlight">✓ Thanh toán PayOS &amp; QR Code check-in</div>
+          <div class="highlight">✓ Repository Pattern + Unit of Work</div>
+          <div class="highlight">✓ Tích hợp Cloudinary &amp; MailKit/SMTP</div>
+          <div class="highlight">✓ Dashboard Admin thống kê doanh thu (Chart.js)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">// CONTACT</div>
+    <h2 class="section-title">Let's Build Something Amazing</h2>
+    <p class="contact-sub">Tôi đang tìm kiếm cơ hội làm việc mới với vị trí <strong>Fullstack / Backend Developer</strong>. Hãy liên hệ nếu bạn có cơ hội phù hợp!</p>
+    <div class="contact-grid">
+      <a href="mailto:lequocbaotxdh@gmail.com" class="contact-card" id="contact-email-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">lequocbaotxdh@gmail.com</span>
+        </div>
+      </a>
+      <a href="tel:0915243557" class="contact-card" id="contact-phone-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">0915 243 557</span>
+        </div>
+      </a>
+      <a href="https://github.com/Bao2311" target="_blank" class="contact-card" id="contact-github-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/Bao2311</span>
+        </div>
+      </a>
+      <div class="contact-card" id="contact-location-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Quận 9, TP. Hồ Chí Minh</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-cta-group">
+      <a href="mailto:lequocbaotxdh@gmail.com" class="btn-primary large" id="hire-btn">
+        <span class="btn-corner tl"></span><span class="btn-corner tr"></span>
+        🚀 Send Me a Message
+        <span class="btn-corner bl"></span><span class="btn-corner br"></span>
+      </a>
+      <a href="Le-Quoc-Bao-CV.pdf" download class="btn-outline large">📄 Download CV</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; Built by <strong>Lê Quốc Bảo</strong> · Full-stack Developer</p>
+    <p class="footer-sub">Java · .NET · React · FPT University 2026 · 📍 Ho Chi Minh City</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
