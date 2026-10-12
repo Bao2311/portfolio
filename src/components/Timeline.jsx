@@ -65,7 +65,11 @@ export const Timeline = ({ data }) => {
                 {item.contents.map((content, idx) => (
                   <div key={idx} className="flex items-start gap-2.5 text-sm md:text-base text-neutral-300 leading-relaxed">
                     <span className="text-lavender font-bold shrink-0 mt-0.5">✦</span>
-                    {content.includes("TOPIK 3") ? (
+                    {content.startsWith("🏆") || content.startsWith("🎖️") ? (
+                      <p className="font-semibold text-amber-300 bg-amber-500/15 px-3 py-1.5 rounded-lg border border-amber-500/30 w-fit text-sm md:text-base">
+                        {content}
+                      </p>
+                    ) : content.includes("TOPIK 3") ? (
                       <p>
                         {content}{" "}
                         <a

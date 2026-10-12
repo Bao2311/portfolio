@@ -31,6 +31,8 @@ const About = () => {
             </p>
             <div className="flex flex-wrap gap-2 mt-3">
               <span className="px-2 py-0.5 text-xs rounded bg-white/10 text-neutral-300">🎓 FPT University (2022–2026)</span>
+              <span className="px-2 py-0.5 text-xs rounded bg-amber-500/20 text-amber-300 border border-amber-500/30 font-medium">🏆 Học bổng 30% ĐH FPT</span>
+              <span className="px-2 py-0.5 text-xs rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-medium">🎖️ Học bổng 8TR FPT Software BrSE</span>
               <a
                 href="/topik-3-certificate.pdf"
                 target="_blank"
