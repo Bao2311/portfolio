@@ -3,8 +3,22 @@ export const myProjects = [
     id: 1,
     title: "SpeakVN Journey",
     badge: "Capstone @ FPT Software · 01/2026 – 08/2026",
+    role: "Full-stack Developer (Backend Lead)",
     description:
-      "Nền tảng chữa ngọng và học tiếng Việt theo từng địa phương (Bắc - Trung - Nam) tích hợp AI đánh giá phát âm thông minh.",
+      "Nền tảng chữa ngọng và học tiếng Việt theo từng phương ngữ (Bắc - Trung - Nam) đầu tiên tại Việt Nam, tích hợp AI đánh giá phát âm thông minh và đấu trường thời gian thực.",
+    metrics: [
+      { label: "RESTful Endpoints", value: "30+ APIs", hint: "CRUD, Auth & Tournament" },
+      { label: "Database PostgreSQL", value: "35+ Tables", hint: "Liquibase Migrations" },
+      { label: "Phân Quyền RBAC", value: "3 Roles", hint: "Admin · Educator · Learner" },
+      { label: "Thời Gian Thực", value: "WebSocket", hint: "STOMP Chat & Thi đấu" },
+    ],
+    highlights: [
+      "Kiến trúc Backend Spring Boot 3 theo Clean Architecture: thiết kế & triển khai hơn 30+ RESTful API endpoints phân tầng chuẩn (Controller - Service - Repository - DTO), Swagger/OpenAPI docs đầy đủ.",
+      "Thiết kế cơ sở dữ liệu quan hệ PostgreSQL 35+ bảng tối ưu hóa quan hệ phức tạp và Indexing nâng cao hiệu năng truy vấn; quản lý schema migration tự động bằng Liquibase.",
+      "Bảo mật đa tầng với Spring Security, JWT kép (Access & Refresh tokens), phân quyền theo Role & Permission (Admin / Educator / Learner), tích hợp Google OAuth2 SSO an toàn.",
+      "Giao tiếp thời gian thực 2 chiều với WebSocket (STOMP protocol) phục vụ hệ thống chat phòng và đấu trường thi đấu phát âm (Tournament) thời gian thực không độ trễ.",
+      "Tích hợp Firebase Storage lưu trữ audio/media, Apache POI xuất báo cáo Excel động, iTextPDF cấp chứng nhận hoàn thành khóa học, đóng gói Docker container sẵn sàng triển khai.",
+    ],
     subDescription: [
       "Kiến trúc Backend Spring Boot: thiết kế & triển khai hơn 30+ RESTful API (Auth, User, Educator, Admin, Tournament, Leaderboard, AI Feedback, Real-time Chat).",
       "Thiết kế cơ sở dữ liệu PostgreSQL gồm 35+ bảng tối ưu hóa quan hệ và chỉ mục, quản lý schema migration bằng Liquibase.",
@@ -42,14 +56,33 @@ export const myProjects = [
         name: "Docker",
         path: "/assets/logos/docker.svg",
       },
+      {
+        id: 6,
+        name: "WebSocket STOMP",
+        path: "",
+      },
     ],
   },
   {
     id: 2,
     title: "Cinema Ticket Booking System",
     badge: "Team Project · 01/2025 – 05/2025",
+    role: "Full-stack Developer (ASP.NET Core & React)",
     description:
-      "Hệ thống full-stack đặt vé xem phim trực tuyến thời gian thực với sơ đồ ghế tương tác, cổng thanh toán PayOS và mã QR check-in.",
+      "Hệ thống full-stack thương mại điện tử đặt vé xem phim trực tuyến thời gian thực với sơ đồ chọn ghế trực quan, cổng thanh toán PayOS và xuất vé điện tử mã QR check-in tự động.",
+    metrics: [
+      { label: "Backend API", value: "22 Controllers", hint: "Repository & Unit of Work" },
+      { label: "Cổng Thanh Toán", value: "PayOS Webhook", hint: "Giao dịch bảo mật tức thì" },
+      { label: "Vé Điện Tử", value: "QR Check-in", hint: "MailKit/SMTP tự động gửi" },
+      { label: "Trạng Thái Hệ Thống", value: "Live Online", hint: "Đã triển khai Vercel & Neon" },
+    ],
+    highlights: [
+      "Kiến trúc Backend ASP.NET Core (.NET 9) với 22 Controllers phân tách nghiệp vụ chặt chẽ theo Repository Pattern & Unit of Work, giảm tối đa phụ thuộc và dễ bảo trì.",
+      "Xử lý vòng đời đặt vé xem phim trực tuyến hoàn chỉnh: sơ đồ ghế phòng chiếu trực quan, cơ chế giữ ghế tạm thời chống đặt trùng ghế, tính toán hóa đơn linh hoạt.",
+      "Tích hợp cổng thanh toán trực tuyến PayOS qua Webhook server-to-server xử lý trạng thái giao dịch tự động tức thì, bảo mật dữ liệu khách hàng tuyệt đối.",
+      "Tự động hóa vé điện tử: MailKit/SMTP tự động sinh mã QR check-in bảo mật một lần và gửi thông tin vé điện tử chi tiết trực tiếp đến hộp thư khách hàng.",
+      "Quản trị Admin Dashboard đa chiều: tích hợp Cloudinary lưu trữ poster/media tốc độ cao, biểu đồ phân tích doanh thu và tỉ lệ lấp đầy phòng chiếu bằng Chart.js.",
+    ],
     subDescription: [
       "Kiến trúc Backend ASP.NET Core (.NET 9) với 22 Controllers phân chia nghiệp vụ chặt chẽ theo Repository Pattern & Unit of Work.",
       "Quản lý vòng đời đặt vé xem phim: hiển thị suất chiếu, sơ đồ chọn ghế trực quan, thanh toán trực tuyến qua cổng PayOS (sandbox) với webhook phản hồi tức thì.",
@@ -69,7 +102,7 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: "ASP.NET Core",
+        name: "ASP.NET Core (.NET 9)",
         path: "/assets/logos/dotnetcore.svg",
       },
       {
@@ -84,6 +117,11 @@ export const myProjects = [
       },
       {
         id: 5,
+        name: "PayOS Gateway",
+        path: "",
+      },
+      {
+        id: 6,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },

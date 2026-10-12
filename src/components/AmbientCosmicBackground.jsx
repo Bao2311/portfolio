@@ -1,9 +1,10 @@
 import React from "react";
 import { Particles } from "./Particles";
+import { CosmicShootingStars } from "./CosmicShootingStars";
 
 export const AmbientCosmicBackground = () => {
   return (
-    <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden w-screen h-screen">
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden w-screen h-screen select-none">
       {/* Edge-to-Edge Drifting Space Dust & Stars */}
       <Particles
         className="absolute inset-0"
@@ -12,6 +13,9 @@ export const AmbientCosmicBackground = () => {
         color="#a78bfa"
         refresh
       />
+
+      {/* Cosmic Shooting Stars & Twinkling Sparkles */}
+      <CosmicShootingStars />
 
       {/* Far Left Ambient Nebula Glows (Rìa bên trái) */}
       <div className="absolute -top-24 -left-60 w-[700px] h-[700px] rounded-full bg-royal/18 blur-[150px] opacity-75" />

@@ -46,6 +46,68 @@
       transform: translateY(calc(-100% - var(--gap)));
     }
   }
+
+  --animate-shooting-star: shootingStar 6s ease-in-out infinite;
+  --animate-shooting-star-fast: shootingStarFast 4.5s ease-in-out infinite;
+  --animate-twinkle: twinkle 3.5s ease-in-out infinite;
+  --animate-float-slow: floatSlow 5s ease-in-out infinite;
+
+  @keyframes shootingStar {
+    0% {
+      transform: rotate(-35deg) translateX(120px) scale(0.6);
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+    }
+    40% {
+      transform: rotate(-35deg) translateX(-950px) scale(1.15);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(-35deg) translateX(-950px) scale(1.15);
+      opacity: 0;
+    }
+  }
+
+  @keyframes shootingStarFast {
+    0% {
+      transform: rotate(-40deg) translateX(150px) scale(0.5);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.9;
+    }
+    35% {
+      transform: rotate(-40deg) translateX(-1100px) scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(-40deg) translateX(-1100px) scale(1.2);
+      opacity: 0;
+    }
+  }
+
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 0.2;
+      transform: scale(0.65);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.35);
+      filter: drop-shadow(0 0 10px rgba(167, 139, 250, 0.95));
+    }
+  }
+
+  @keyframes floatSlow {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
 }
 body {
   background: #030412;
