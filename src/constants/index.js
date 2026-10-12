@@ -26,10 +26,10 @@ export const myProjects = [
       "Giao tiếp thời gian thực 2 chiều với WebSocket (STOMP) cho hệ thống phòng Chat và giải đấu phát âm (Tournament).",
       "Tích hợp Firebase Admin SDK, xuất báo cáo động Excel (Apache POI) & chứng nhận PDF (iTextPDF), đóng gói Docker container.",
     ],
-    href: "https://github.com/Bao2311/SpeakVN",
+    href: "https://speak-vn.vercel.app/",
     github: "https://github.com/Bao2311/SpeakVN",
-    liveDemo: "",
-    image: "/assets/projects/auth-system.jpg",
+    liveDemo: "https://speak-vn.vercel.app/",
+    image: "/assets/projects/speakvn-showcase.png",
     tags: [
       {
         id: 1,
