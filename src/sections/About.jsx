@@ -13,13 +13,13 @@ const About = () => {
         <h2 className="text-heading">Who Am I & What I Build</h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem]">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[minmax(19.5rem,auto)]">
         {/* Grid 1: Personal Intro */}
         <div className="flex items-end grid-default-color grid-1 relative overflow-hidden group">
           <img
-            src="assets/coding-pov.png"
-            alt="coding"
-            className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] opacity-80 group-hover:scale-105 transition-transform duration-500"
+            src="/assets/coding-pov.png"
+            alt="coding illustration"
+            className="absolute right-0 top-0 w-3/5 sm:w-1/2 h-full object-contain object-right-top opacity-25 md:opacity-35 pointer-events-none select-none transition-transform duration-700 group-hover:scale-105"
           />
           <div className="z-10 relative">
             <span className="inline-block px-2.5 py-1 mb-2 text-xs font-semibold rounded-md bg-lavender/20 text-lavender border border-lavender/30">
@@ -45,7 +45,7 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
+          <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo/90" />
         </div>
 
         {/* Grid 2: Engineering Philosophy */}
@@ -89,12 +89,12 @@ const About = () => {
             />
             <Card
               style={{ rotate: "30deg", top: "25%", left: "40%" }}
-              image="assets/logos/java.svg"
+              image="/assets/logos/java.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-25deg", top: "65%", left: "75%" }}
-              image="assets/logos/csharp-pink.png"
+              image="/assets/logos/csharp-pink.png"
               containerRef={grid2Container}
             />
           </div>
@@ -122,13 +122,13 @@ const About = () => {
           </div>
 
           {/* Soft gradient fade so text is always 100% legible */}
-          <div className="absolute inset-y-0 left-0 w-3/5 bg-gradient-to-r from-midnight via-midnight/80 to-transparent pointer-events-none z-10 hidden sm:block" />
+          <div className="absolute inset-y-0 left-0 w-3/5 bg-gradient-to-r from-[#242424] via-[#242424]/90 to-transparent pointer-events-none z-10 hidden sm:block" />
 
           {/* 3D Globe Docked to the Right Side (z-10) with Responsive Size */}
           <figure className="absolute -right-16 -bottom-14 sm:-right-8 sm:top-1/2 sm:-translate-y-1/2 pointer-events-auto z-10 flex items-center justify-center">
             <Globe
               className="max-w-[360px]"
-              canvasClassName="size-[18rem] sm:size-[21rem] md:size-[22rem]"
+              canvasClassName="size-[16rem] sm:size-[20rem] md:size-[22rem]"
             />
           </figure>
         </div>
@@ -148,18 +148,18 @@ const About = () => {
         </div>
 
         {/* Grid 5: Tech Stack & Orbit */}
-        <div className="grid-default-color grid-5 relative overflow-hidden">
-          <div className="z-10 w-[45%] flex flex-col justify-center h-full">
+        <div className="grid-default-color grid-5 relative overflow-hidden flex flex-col justify-center">
+          <div className="z-10 w-full sm:w-[55%] md:w-[48%] flex flex-col justify-center h-full relative">
             <p className="headtext text-xl font-bold text-white">Core Tech Stack</p>
-            <p className="subtext leading-relaxed mt-1">
+            <p className="subtext leading-relaxed mt-1 text-xs sm:text-sm">
               Hệ sinh thái công nghệ: Java (Spring Boot), C# (ASP.NET Core), PostgreSQL, SQL Server, Docker, React 18, Tailwind CSS, và các công cụ AI hỗ trợ phát triển tối ưu.
             </p>
-            <div className="flex gap-2 mt-3">
+            <div className="flex flex-wrap gap-2 mt-3">
               <span className="px-2 py-1 text-xs rounded-md bg-royal/40 text-lavender border border-royal/60">Backend Focus</span>
               <span className="px-2 py-1 text-xs rounded-md bg-royal/40 text-aqua border border-royal/60">Full-stack Capable</span>
             </div>
           </div>
-          <div className="absolute inset-y-0 md:inset-y-4 w-full h-full start-[45%] md:scale-110 flex items-center justify-center pointer-events-none">
+          <div className="absolute inset-y-0 right-0 w-[50%] sm:w-[48%] md:w-[50%] flex items-center justify-center pointer-events-none opacity-40 sm:opacity-90 md:opacity-100 overflow-hidden">
             <Frameworks />
           </div>
         </div>

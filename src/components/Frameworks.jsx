@@ -23,15 +23,15 @@ export function Frameworks() {
   ];
 
   return (
-    <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
+    <div className="relative flex h-[15rem] w-full flex-col items-center justify-center scale-[0.82] sm:scale-95 md:scale-100 transition-transform">
       <OrbitingCircles iconSize={38} radius={140} speed={1.2}>
         {outerSkills.map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} alt={skill} />
+          <Icon key={index} src={`/assets/logos/${skill}.svg`} alt={skill} />
         ))}
       </OrbitingCircles>
       <OrbitingCircles iconSize={28} radius={85} reverse speed={1.8}>
         {innerSkills.map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} alt={skill} />
+          <Icon key={index} src={`/assets/logos/${skill}.svg`} alt={skill} />
         ))}
       </OrbitingCircles>
     </div>

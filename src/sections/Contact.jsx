@@ -67,35 +67,35 @@ const Contact = () => {
             </div>
 
             {/* Profile Code Block */}
-            <div className="font-mono text-xs sm:text-sm text-neutral-300 space-y-1.5 bg-[#050616]/75 p-4 sm:p-5 rounded-2xl border border-white/5 leading-relaxed">
-              <p>
+            <div className="font-mono text-xs sm:text-sm text-neutral-300 space-y-1.5 bg-[#050616]/75 p-4 sm:p-5 rounded-2xl border border-white/5 leading-relaxed overflow-x-auto">
+              <p className="break-words">
                 <span className="text-lavender">const</span> developer = {"{"}
               </p>
-              <p className="pl-4">
+              <p className="pl-4 break-words">
                 <span className="text-neutral-400">"name":</span> <span className="text-emerald-300">"Lê Quốc Bảo"</span>,
               </p>
-              <p className="pl-4">
+              <p className="pl-4 break-words">
                 <span className="text-neutral-400">"role":</span> <span className="text-emerald-300">"Full-stack Developer"</span>,
               </p>
-              <p className="pl-4">
+              <p className="pl-4 break-words">
                 <span className="text-neutral-400">"status":</span> <span className="text-cyan-300">"🟢 Open to Work"</span>,
               </p>
-              <p className="pl-4">
+              <p className="pl-4 break-words">
                 <span className="text-neutral-400">"backend":</span> <span className="text-amber-300">["Java (Spring Boot)", ".NET 9 (C#)"]</span>,
               </p>
-              <p className="pl-4">
+              <p className="pl-4 break-words">
                 <span className="text-neutral-400">"frontend":</span> <span className="text-amber-300">["React 18", "TypeScript", "Tailwind"]</span>,
               </p>
-              <p className="pl-4">
+              <p className="pl-4 break-words">
                 <span className="text-neutral-400">"database":</span> <span className="text-amber-300">["PostgreSQL", "SQL Server"]</span>,
               </p>
-              <p className="pl-4">
+              <p className="pl-4 break-words">
                 <span className="text-neutral-400">"languages":</span> <span className="text-emerald-300">["Vietnamese (Native)", <a href="/topik-3-certificate.pdf" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors cursor-pointer" title="Xem chứng chỉ TOPIK 3 (PDF)">"Korean (TOPIK 3 ↗)"</a>]</span>,
               </p>
-              <p className="pl-4">
+              <p className="pl-4 break-words">
                 <span className="text-neutral-400">"experience":</span> <span className="text-lavender">"Fresher @ FPT Software"</span>
               </p>
-              <p>{"}"};</p>
+              <p className="break-words">{"}"};</p>
             </div>
           </div>
 
@@ -104,7 +104,7 @@ const Contact = () => {
             <a
               href="/Le-Quoc-Bao-CV.pdf"
               download="Le-Quoc-Bao-CV.pdf"
-              className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-royal to-lavender hover:opacity-95 rounded-xl transition-all hover:scale-[1.02] shadow-lg shadow-royal/30"
+              className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-royal to-lavender hover:opacity-95 rounded-xl transition-all hover:scale-[1.02] shadow-lg shadow-royal/30"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -116,7 +116,7 @@ const Contact = () => {
               href="https://github.com/Bao2311"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-5 py-3 text-xs sm:text-sm font-semibold text-neutral-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all hover:scale-[1.02]"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 text-xs sm:text-sm font-semibold text-neutral-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all hover:scale-[1.02]"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
@@ -146,20 +146,20 @@ const Contact = () => {
 
             {/* Channel 1: Email Card */}
             <div className="p-4 sm:p-4.5 rounded-2xl bg-[#050616]/70 border border-white/5 hover:border-lavender/30 transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 group/item">
-              <div className="flex items-center gap-3.5">
+              <div className="flex items-center gap-3.5 min-w-0">
                 <div className="w-11 h-11 rounded-xl bg-royal/20 border border-royal/30 flex items-center justify-center text-lavender group-hover/item:scale-105 transition-transform shrink-0">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <div className="flex items-center gap-2">
                     <span className="text-[11px] font-semibold text-neutral-400 uppercase tracking-wider">Email liên hệ</span>
                     <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-medium">
                       Ưu tiên
                     </span>
                   </div>
-                  <p className="text-sm sm:text-base font-semibold text-white group-hover/item:text-lavender transition-colors mt-0.5">
+                  <p className="text-sm sm:text-base font-semibold text-white group-hover/item:text-lavender transition-colors mt-0.5 break-all sm:break-normal">
                     {email}
                   </p>
                   <p className="text-[11px] text-neutral-400">Phản hồi thư trong vòng 24 giờ</p>
@@ -203,13 +203,13 @@ const Contact = () => {
 
             {/* Channel 2: Phone & Zalo Card */}
             <div className="p-4 sm:p-4.5 rounded-2xl bg-[#050616]/70 border border-white/5 hover:border-lavender/30 transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 group/item">
-              <div className="flex items-center gap-3.5">
+              <div className="flex items-center gap-3.5 min-w-0">
                 <div className="w-11 h-11 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover/item:scale-105 transition-transform shrink-0">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <div className="flex items-center gap-2">
                     <span className="text-[11px] font-semibold text-neutral-400 uppercase tracking-wider">Điện thoại / Zalo</span>
                     <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 font-medium">

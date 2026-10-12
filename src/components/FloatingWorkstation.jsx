@@ -26,7 +26,7 @@ function RotatingDesk() {
 
 export const FloatingWorkstation = () => {
   return (
-    <div className="relative w-full h-[460px] sm:h-[520px] lg:h-[580px] flex flex-col items-center justify-center">
+    <div className="relative w-full h-[340px] sm:h-[440px] md:h-[490px] lg:h-[550px] flex flex-col items-center justify-center">
       {/* Background Neon Aura / Space Nebula */}
       <div className="absolute inset-0 max-w-[520px] max-h-[520px] m-auto bg-gradient-to-tr from-royal/30 via-lavender/20 to-aqua/25 rounded-full blur-3xl pointer-events-none" />
 

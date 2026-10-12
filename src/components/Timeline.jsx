@@ -8,11 +8,23 @@ export const Timeline = ({ data }) => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    if (ref.current) {
-      const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height);
+    const updateHeight = () => {
+      if (ref.current) {
+        setHeight(ref.current.getBoundingClientRect().height);
+      }
+    };
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    let resizeObserver;
+    if (typeof ResizeObserver !== "undefined" && ref.current) {
+      resizeObserver = new ResizeObserver(updateHeight);
+      resizeObserver.observe(ref.current);
     }
-  }, [ref]);
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+      if (resizeObserver) resizeObserver.disconnect();
+    };
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,

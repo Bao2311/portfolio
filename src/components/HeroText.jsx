@@ -65,27 +65,27 @@ const HeroText = () => {
 
       {/* Action Buttons */}
       <motion.div
-        className="flex flex-wrap items-center gap-3 sm:gap-4 mt-8"
+        className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 mt-8 w-full sm:w-auto"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
       >
         <a
           href="#projects"
-          className="px-6 py-3 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-royal to-lavender rounded-xl hover:opacity-90 transition-all hover:scale-105 shadow-lg shadow-royal/40"
+          className="px-6 py-3 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-royal to-lavender rounded-xl hover:opacity-90 transition-all hover:scale-105 shadow-lg shadow-royal/40 text-center inline-flex items-center justify-center"
         >
           🚀 View Projects
         </a>
         <a
           href="/Le-Quoc-Bao-CV.pdf"
           download="Le-Quoc-Bao-CV.pdf"
-          className="px-6 py-3 text-xs sm:text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl transition-all hover:scale-105 backdrop-blur-md shadow-md"
+          className="px-6 py-3 text-xs sm:text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl transition-all hover:scale-105 backdrop-blur-md shadow-md text-center inline-flex items-center justify-center"
         >
           📄 Download CV
         </a>
         <a
           href="#contact"
-          className="px-6 py-3 text-xs sm:text-sm font-semibold text-neutral-300 hover:text-white border border-neutral-700 hover:border-neutral-400 rounded-xl transition-all hover:scale-105"
+          className="px-6 py-3 text-xs sm:text-sm font-semibold text-neutral-300 hover:text-white border border-neutral-700 hover:border-neutral-400 rounded-xl transition-all hover:scale-105 text-center inline-flex items-center justify-center"
         >
           Contact Me
         </a>

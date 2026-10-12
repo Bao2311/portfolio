@@ -18,7 +18,7 @@ const ProjectDetails = ({
       onClick={closeModal}
     >
       <motion.div
-        className="relative max-w-2xl w-full border shadow-2xl rounded-2xl bg-midnight border-white/10 overflow-hidden my-auto max-h-[90vh] flex flex-col"
+        className="relative w-[94vw] max-w-2xl border shadow-2xl rounded-2xl bg-midnight border-white/10 overflow-hidden my-auto max-h-[88vh] flex flex-col"
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9 }}
@@ -29,7 +29,7 @@ const ProjectDetails = ({
           className="absolute z-10 p-2.5 rounded-full top-4 right-4 bg-black/60 hover:bg-neutral-800 text-white transition-colors cursor-pointer border border-white/10"
           aria-label="Close modal"
         >
-          <img src="assets/close.svg" className="w-5 h-5" alt="close" />
+          <img src="/assets/close.svg" className="w-5 h-5" alt="close" />
         </button>
 
         <div className="relative w-full aspect-video max-h-72 overflow-hidden shrink-0 bg-[#070a14] p-2 flex items-center justify-center">
