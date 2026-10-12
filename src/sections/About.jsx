@@ -99,26 +99,35 @@ const About = () => {
         </div>
 
         {/* Grid 3: Location & Timezone with 3D Globe */}
-        <div className="grid-black-color grid-3 relative overflow-hidden">
-          <div className="z-10 w-[55%] flex flex-col justify-between h-full">
-            <div>
+        <div className="grid-black-color grid-3 relative overflow-hidden flex items-center justify-between p-6">
+          {/* Text Content - Always on top (z-20) */}
+          <div className="z-20 relative w-full sm:w-[55%] max-w-[330px] flex flex-col justify-between h-full pointer-events-none">
+            <div className="pointer-events-auto">
               <p className="headtext text-xl font-bold text-white flex items-center gap-2">
                 <span>📍</span> Ho Chi Minh City, VN
               </p>
-              <p className="subtext mt-1">
+              <p className="subtext mt-1 text-xs sm:text-sm text-neutral-300 leading-relaxed">
                 Khu vực: Quận 9, TP. Hồ Chí Minh (UTC+7). Sẵn sàng nhận việc Onsite, Hybrid hoặc Remote linh hoạt.
               </p>
             </div>
-            <div className="mt-4 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
-              <p className="text-xs text-neutral-400">Current Status</p>
-              <p className="text-sm font-semibold text-emerald-400 flex items-center gap-1.5 mt-0.5">
+            <div className="mt-4 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-md pointer-events-auto w-fit shadow-lg">
+              <p className="text-[11px] text-neutral-400 font-medium">Current Status</p>
+              <p className="text-xs sm:text-sm font-semibold text-emerald-400 flex items-center gap-1.5 mt-0.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                 Open to Opportunities
               </p>
             </div>
           </div>
-          <figure className="absolute -right-[15%] -bottom-[20%] sm:right-[-5%] sm:top-[-10%] scale-90 sm:scale-100 pointer-events-auto">
-            <Globe />
+
+          {/* Soft gradient fade so text is always 100% legible */}
+          <div className="absolute inset-y-0 left-0 w-3/5 bg-gradient-to-r from-midnight via-midnight/80 to-transparent pointer-events-none z-10 hidden sm:block" />
+
+          {/* 3D Globe Docked to the Right Side (z-10) with Responsive Size */}
+          <figure className="absolute -right-16 -bottom-14 sm:-right-8 sm:top-1/2 sm:-translate-y-1/2 pointer-events-auto z-10 flex items-center justify-center">
+            <Globe
+              className="max-w-[360px]"
+              canvasClassName="size-[18rem] sm:size-[21rem] md:size-[22rem]"
+            />
           </figure>
         </div>
 
