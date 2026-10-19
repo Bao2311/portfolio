@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+import CvDownloadDropdown from "../components/CvDownloadDropdown";
 
 function Navigation({ onItemClick }) {
   const links = [
@@ -25,13 +26,13 @@ function Navigation({ onItemClick }) {
         </li>
       ))}
       <li className="nav-li">
-        <a
-          href="/Le-Quoc-Bao-CV.pdf"
-          download="Le-Quoc-Bao-CV.pdf"
-          className="inline-flex items-center gap-2 px-4 py-1.5 text-sm font-semibold text-white bg-gradient-to-r from-royal to-lavender rounded-full shadow-md hover:opacity-90 transition-all hover:scale-105"
-        >
-          <span>📄 CV</span>
-        </a>
+        <CvDownloadDropdown
+          label="CV"
+          icon="📄"
+          position="bottom-right"
+          triggerClassName="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-sm font-semibold text-white bg-gradient-to-r from-royal to-lavender rounded-full shadow-md hover:opacity-90 transition-all hover:scale-105"
+          onOptionClick={onItemClick}
+        />
       </li>
     </ul>
   );
@@ -71,7 +72,7 @@ const Navbar = () => {
 
       {isOpen && (
         <motion.div
-          className="block overflow-hidden text-center sm:hidden bg-primary/95 border-b border-white/10"
+          className="block overflow-visible text-center sm:hidden bg-primary/95 border-b border-white/10"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}

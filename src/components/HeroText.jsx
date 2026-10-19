@@ -1,5 +1,6 @@
 import { FlipWords } from "./FlipWords";
 import { motion } from "motion/react";
+import CvDownloadDropdown from "./CvDownloadDropdown";
 
 const HeroText = () => {
   const words = ["Full-stack", "Java · Spring", ".NET · C#", "React · TS", "Scalable"];
@@ -76,13 +77,13 @@ const HeroText = () => {
         >
           🚀 View Projects
         </a>
-        <a
-          href="/Le-Quoc-Bao-CV.pdf"
-          download="Le-Quoc-Bao-CV.pdf"
-          className="px-6 py-3 text-xs sm:text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl transition-all hover:scale-105 backdrop-blur-md shadow-md text-center inline-flex items-center justify-center"
-        >
-          📄 Download CV
-        </a>
+        <CvDownloadDropdown
+          label="Download CV"
+          icon="📄"
+          position="bottom-center"
+          containerClassName="w-full sm:w-auto"
+          triggerClassName="w-full sm:w-auto px-6 py-3 text-xs sm:text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl transition-all hover:scale-105 backdrop-blur-md shadow-md text-center inline-flex items-center justify-center"
+        />
         <a
           href="#contact"
           className="px-6 py-3 text-xs sm:text-sm font-semibold text-neutral-300 hover:text-white border border-neutral-700 hover:border-neutral-400 rounded-xl transition-all hover:scale-105 text-center inline-flex items-center justify-center"

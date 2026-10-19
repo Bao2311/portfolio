@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Particles } from "../components/Particles";
+import CvDownloadDropdown from "../components/CvDownloadDropdown";
 
 const Contact = () => {
   const [copiedType, setCopiedType] = useState(null);
@@ -101,16 +102,17 @@ const Contact = () => {
 
           {/* Quick CTA Actions under Profile */}
           <div className="mt-6 pt-5 border-t border-white/10 flex flex-col sm:flex-row gap-3">
-            <a
-              href="/Le-Quoc-Bao-CV.pdf"
-              download="Le-Quoc-Bao-CV.pdf"
-              className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-royal to-lavender hover:opacity-95 rounded-xl transition-all hover:scale-[1.02] shadow-lg shadow-royal/30"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              <span>Tải CV (PDF)</span>
-            </a>
+            <CvDownloadDropdown
+              label="Tải CV (PDF)"
+              icon={
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              }
+              position="top-left"
+              containerClassName="w-full sm:flex-1"
+              triggerClassName="w-full inline-flex items-center justify-center gap-2 px-5 py-3 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-royal to-lavender hover:opacity-95 rounded-xl transition-all hover:scale-[1.02] shadow-lg shadow-royal/30"
+            />
 
             <a
               href="https://github.com/Bao2311"
