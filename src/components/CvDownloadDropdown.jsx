@@ -14,7 +14,7 @@ const cvOptions = [
   {
     id: "en",
     name: "English Version",
-    subtitle: "English Resume (International format)",
+    subtitle: "English CV (TopCV standard)",
     flag: "🇬🇧",
     badge: "EN",
     fileUrl: "/Le-Quoc-Bao-CV-EN.pdf",
